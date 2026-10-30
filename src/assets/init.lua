@@ -19,6 +19,7 @@ require("mason-tool-installer").setup({
 
 local servers = {
 	tsc = {},
+	-- https://github.com/neovim/nvim-lspconfig/blob/master/lsp/tailwindcss.lua
 	tailwindcss = {},
 }
 

@@ -23,6 +23,9 @@ local servers = {
 	tailwindcss = {},
 }
 
+-- swatch instead of background highlight
+-- vim.lsp.document_color.enable(true, nil, { style = "■ " })
+
 for name, config in pairs(servers) do
 	vim.lsp.config(name, config)
 	vim.lsp.enable(name)

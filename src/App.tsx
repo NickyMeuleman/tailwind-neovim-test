@@ -1,5 +1,6 @@
 import direct from "./assets/direct.png";
 import indirect from "./assets/indirect.png";
+import swatch from "./assets/swatch.png";
 
 export default function App() {
 	return (
@@ -19,6 +20,7 @@ export default function App() {
 			<div className="grid gap-4 place-items-center">
 				<img src={direct} />
 				<img src={indirect} />
+				<img src={swatch} />
 			</div>
 		</div>
 	);

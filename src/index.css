@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  --custom-indirect: oklch(1 0.11 178);
+}
+
+.dark {
+  --custom-indirect: oklch(0.1 0.11 178);
+}
+
+@theme inline {
+  --color-custom-direct: oklch(0.72 0.11 178);
+  --color-custom-indirect: var(--custom-indirect)
+}

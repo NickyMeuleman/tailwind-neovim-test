@@ -1,16 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --custom-indirect: oklch(1 0.11 178);
+	--custom-indirect: oklch(1 0.11 178);
 }
 
 .dark {
-  --custom-indirect: oklch(0.1 0.11 178);
+	--custom-indirect: oklch(0.1 0.11 178);
 }
 
 @theme inline {
-  --color-custom-direct: oklch(1 0.11 178);
-  --color-custom-indirect: var(--custom-indirect)
-  /* workaround that uses the custom property (including the dark override) on the site, but the fallback in the editor */
-  /* --color-custom-indirect: var(--custom-indirect, oklch(1 0.11 178)) */
+	--color-custom-direct: oklch(1 0.11 178);
+	--color-custom-indirect: var(--custom-indirect, yellow);
+	/* workaround that uses the custom property (including the dark override) on the site, but the fallback in the editor */
+	/* --color-custom-indirect: var(--custom-indirect, oklch(1 0.11 178)) */
+
+	--color-primary: #ff0000;
+	--color-primary-foreground: #0000ff;
 }

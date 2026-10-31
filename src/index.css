@@ -9,6 +9,8 @@
 }
 
 @theme inline {
-  --color-custom-direct: oklch(0.72 0.11 178);
+  --color-custom-direct: oklch(1 0.11 178);
   --color-custom-indirect: var(--custom-indirect)
+  /* workaround that uses the custom property (including the dark override) on the site, but the fallback in the editor */
+  /* --color-custom-indirect: var(--custom-indirect, oklch(1 0.11 178)) */
 }
